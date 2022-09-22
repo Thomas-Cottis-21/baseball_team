@@ -1,3 +1,9 @@
+Version 4.9.1
+    - Updated fonts of all h1 - h6 titles
+    - Updated logos
+    - Updated slider images
+    - Updated small page details (title, favicon, etc.)
+
 Version: 4.9.0
   - Updated Bootstrap to version 5.2.1
   - Updated all outdated third party vendor libraries to their latest versions
