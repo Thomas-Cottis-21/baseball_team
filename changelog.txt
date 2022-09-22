@@ -1,3 +1,8 @@
+Version 4.10.2
+    - Replaced old about section with new roster section with coaches and players cards.
+    - Replaced some colors in navbar, hero + heading.
+    - Optimized css in new roster section
+
 Version 4.9.1
     - Updated fonts of all h1 - h6 titles
     - Updated logos

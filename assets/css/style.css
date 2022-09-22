@@ -1,11 +1,11 @@
 /**
- * Template Name: Hidayah - v4.9.0
- * Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- *
- * @format
- */
+    * Template Name: Hidayah - v4.9.0
+    * Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    *
+    * @format
+    */
 
 /*--------------------------------------------------------------
 # General
@@ -16,12 +16,12 @@ body {
 }
 
 a {
-	color: #428bca;
+	color: #d0bb50;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #6aa3d5;
+	color: #988e47;
 	text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ h6 {
 	position: fixed;
 	top: calc(50% - 30px);
 	left: calc(50% - 30px);
-	border: 6px solid #428bca;
+	border: 6px solid #55252f;
 	border-top-color: #fff;
 	border-bottom-color: #fff;
 	border-radius: 50%;
@@ -93,7 +93,7 @@ h6 {
 	right: 15px;
 	bottom: 15px;
 	z-index: 99999;
-	background: #428bca;
+	background: #55252f;
 	width: 40px;
 	height: 40px;
 	border-radius: 4px;
@@ -107,8 +107,8 @@ h6 {
 }
 
 .back-to-top:hover {
-	background: #629fd3;
-	color: #fff;
+	background: #d0bb50;
+    color: #fff;
 }
 
 .back-to-top.active {
@@ -138,12 +138,11 @@ h6 {
 	line-height: 1;
 	font-weight: 600;
 	letter-spacing: 1px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 #header .logo a {
 	color: #fff;
-    font-family: 'Oswald', sans-serif;
 }
 
 #header .logo img {
@@ -203,7 +202,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-	color: #5697d0;
+	color: #d0bb50;
 }
 
 .navbar .dropdown ul {
@@ -240,7 +239,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-	color: #428bca;
+	color: #d0bb50;
 }
 
 .navbar .dropdown:hover > ul {
@@ -340,7 +339,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-	color: #428bca;
+	color: #d0bb50;
 }
 
 .navbar-mobile .getstarted,
@@ -588,167 +587,72 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .icon-boxes h3 {
-	font-size: 28px;
-	font-weight: 700;
-	color: #394047;
-	margin-bottom: 15px;
+#roster .roster-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+#roster .roster-container .card {
+    width: 20vw;
+    height: auto;
 }
 
-.about .icon-box {
-	margin-top: 40px;
+/* Coaches / players section */
+
+#roster .roster-container .coaches-title,
+#roster .roster-container .players-title {
+    text-align: center;
+}
+#roster .roster-container .coaches-title hr,
+#roster .roster-container .players-title hr {
+    border: 2px solid #55252f;
+    opacity: 1;
+}
+#roster .roster-container .coaches > div,
+#roster .roster-container .players > div {
+    margin: 10px;
 }
 
-.about .icon-box .icon {
-	float: left;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 64px;
-	height: 64px;
-	border: 2px solid #b9d4ec;
-	border-radius: 50px;
-	transition: 0.5s;
+/* End coaches / player section */
+
+/* Coaches section */
+#roster .roster-container .coaches-section {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#roster .roster-container .coaches {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.about .icon-box .icon i {
-	color: #428bca;
-	font-size: 32px;
+/* End coaches section */
+
+/* Players section */
+
+#roster .roster-container .players-section {
+    display: flex;
+    flex-direction: column;  
+    width: 95%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#roster .roster-container .players {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.about .icon-box:hover .icon {
-	background: #428bca;
-	border-color: #428bca;
-}
-
-.about .icon-box:hover .icon i {
-	color: #fff;
-}
-
-.about .icon-box .title {
-	margin-left: 85px;
-	font-weight: 700;
-	margin-bottom: 10px;
-	font-size: 18px;
-}
-
-.about .icon-box .title a {
-	color: #343a40;
-	transition: 0.3s;
-}
-
-.about .icon-box .title a:hover {
-	color: #428bca;
-}
-
-.about .icon-box .description {
-	margin-left: 85px;
-	line-height: 24px;
-	font-size: 14px;
-}
-
-.about .video-box {
-	background: url('../img/about.jpg') center center no-repeat;
-	background-size: cover;
-	min-height: 500px;
-}
-
-.about .play-btn {
-	width: 94px;
-	height: 94px;
-	background: radial-gradient(#428bca 50%, rgba(66, 139, 202, 0.4) 52%);
-	border-radius: 50%;
-	display: block;
-	position: absolute;
-	left: calc(50% - 47px);
-	top: calc(50% - 47px);
-	overflow: hidden;
-}
-
-.about .play-btn::after {
-	content: '';
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-40%) translateY(-50%);
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 15px solid #fff;
-	z-index: 100;
-	transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.about .play-btn::before {
-	content: '';
-	position: absolute;
-	width: 120px;
-	height: 120px;
-	-webkit-animation-delay: 0s;
-	animation-delay: 0s;
-	-webkit-animation: pulsate-btn 2s;
-	animation: pulsate-btn 2s;
-	-webkit-animation-direction: forwards;
-	animation-direction: forwards;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-timing-function: steps;
-	animation-timing-function: steps;
-	opacity: 1;
-	border-radius: 50%;
-	border: 5px solid rgba(66, 139, 202, 0.7);
-	top: -15%;
-	left: -15%;
-	background: rgba(198, 16, 0, 0);
-}
-
-.about .play-btn:hover::after {
-	border-left: 15px solid #428bca;
-	transform: scale(20);
-}
-
-.about .play-btn:hover::before {
-	content: '';
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-40%) translateY(-50%);
-	width: 0;
-	height: 0;
-	border: none;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-left: 15px solid #fff;
-	z-index: 200;
-	-webkit-animation: none;
-	animation: none;
-	border-radius: 0;
-}
-
-@-webkit-keyframes pulsate-btn {
-	0% {
-		transform: scale(0.6, 0.6);
-		opacity: 1;
-	}
-
-	100% {
-		transform: scale(1, 1);
-		opacity: 0;
-	}
-}
-
-@keyframes pulsate-btn {
-	0% {
-		transform: scale(0.6, 0.6);
-		opacity: 1;
-	}
-
-	100% {
-		transform: scale(1, 1);
-		opacity: 0;
-	}
-}
+/* End players section */
 
 /*--------------------------------------------------------------
 # Counts
