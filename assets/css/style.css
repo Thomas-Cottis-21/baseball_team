@@ -10,6 +10,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html,body {
+    overflow-x: hidden;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #444444;
@@ -630,7 +633,7 @@ section {
 #roster .roster-container .coaches {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* End coaches section */
@@ -649,7 +652,18 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+    #roster .roster-container .coaches,
+    #roster .roster-container .players {
+        flex-direction: column;
+    }
+    #roster .roster-container .coaches .card,
+    #roster .roster-container .players .card {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 /* End players section */
