@@ -559,7 +559,7 @@ section {
 	padding: 8px 20px;
 	margin: 0;
 	background: #f5f9fc;
-	color: #d0bb50;
+	color: #55252f;
 	display: inline-block;
 	text-transform: uppercase;
 	border-radius: 50px;
@@ -572,7 +572,7 @@ section {
 }
 
 .section-title h3 span {
-	color: #d0bb50;
+	color: #55252f;
 }
 
 .section-title p {
@@ -593,7 +593,7 @@ section {
 #roster .roster-container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -611,7 +611,7 @@ section {
 }
 #roster .roster-container .coaches-title hr,
 #roster .roster-container .players-title hr {
-    border: 1px solid #d0bb50;
+    border: 2px solid #55252f;
     opacity: 1;
 }
 #roster .roster-container .coaches > div,

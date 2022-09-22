@@ -1,3 +1,7 @@
+Version 4.11.3
+    - Updated width property to roster-container to 100%, fixing not centering section bug. 
+    - Updated color codes of section titles.
+
 Version 4.11.2
     - Added media quieres to the roster + fine tuned media queries
 
