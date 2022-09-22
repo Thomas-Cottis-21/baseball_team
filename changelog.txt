@@ -1,3 +1,7 @@
+Version 4.11.0 
+    - Replaced the rest of the colors with colors aligned with the logo
+    - Updated the hr tags in the players and coaches roster. Thinner looks better.
+
 Version 4.10.2
     - Replaced old about section with new roster section with coaches and players cards.
     - Replaced some colors in navbar, hero + heading.

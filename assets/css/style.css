@@ -132,7 +132,7 @@ h6 {
 }
 
 #header .logo {
-	font-size: 30px;
+	font-size: 40px;
 	margin: 0;
 	padding: 0;
 	line-height: 1;
@@ -229,7 +229,7 @@ h6 {
 	font-size: 13px;
 	font-weight: 500;
 	text-transform: none;
-	color: #193c5a;
+	color: black;
 }
 
 .navbar .dropdown ul a i {
@@ -375,7 +375,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover > a {
-	color: #428bca;
+	color: #d0bb50;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -498,7 +498,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
 	opacity: 1;
-	background: #428bca;
+	background: #d0bb50;
 }
 
 #hero .btn-get-started {
@@ -514,11 +514,11 @@ h6 {
 	color: #fff;
 	-webkit-animation-delay: 0.8s;
 	animation-delay: 0.8s;
-	background: #428bca;
+	background: #d0bb50;
 }
 
 #hero .btn-get-started:hover {
-	background: #5697d0;
+	background: #e8d662;
 }
 
 @media (max-width: 768px) {
@@ -556,7 +556,7 @@ section {
 	padding: 8px 20px;
 	margin: 0;
 	background: #f5f9fc;
-	color: #428bca;
+	color: #d0bb50;
 	display: inline-block;
 	text-transform: uppercase;
 	border-radius: 50px;
@@ -569,7 +569,7 @@ section {
 }
 
 .section-title h3 span {
-	color: #428bca;
+	color: #d0bb50;
 }
 
 .section-title p {
@@ -608,7 +608,7 @@ section {
 }
 #roster .roster-container .coaches-title hr,
 #roster .roster-container .players-title hr {
-    border: 2px solid #55252f;
+    border: 1px solid #d0bb50;
     opacity: 1;
 }
 #roster .roster-container .coaches > div,
@@ -664,7 +664,7 @@ section {
 .counts .counters span {
 	font-size: 48px;
 	display: block;
-	color: #428bca;
+	color: #d0bb50;
 	font-weight: 700;
 }
 
@@ -713,7 +713,7 @@ section {
 	width: 1px;
 	height: 10px;
 	transition: 0.9s;
-	background-color: #428bca;
+	background-color: #d0bb50;
 }
 
 /*--------------------------------------------------------------
@@ -732,7 +732,7 @@ section {
 }
 
 .services .icon i {
-	color: #428bca;
+	color: #d0bb50;
 	font-size: 36px;
 	line-height: 1;
 }
@@ -750,7 +750,7 @@ section {
 }
 
 .services .icon-box:hover .title a {
-	color: #428bca;
+	color: #d0bb50;
 }
 
 .services .description {
@@ -790,12 +790,12 @@ section {
 	border-radius: 4px;
 	transition: 0.5s;
 	margin-top: 20px;
-	background: #428bca;
+	background: #d0bb50;
 	color: #fff;
 }
 
 .cta .cta-btn:hover {
-	background: #5697d0;
+	background: #e8d662;
 }
 
 /*--------------------------------------------------------------
@@ -829,7 +829,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
 	color: #fff;
-	background: #428bca;
+	background: #d0bb50;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -945,14 +945,14 @@ section {
 	height: 12px;
 	background-color: #fff;
 	opacity: 1;
-	border: 1px solid #428bca;
+	border: 1px solid #d0bb50;
 }
 
 .portfolio-details
 	.portfolio-details-slider
 	.swiper-pagination
 	.swiper-pagination-bullet-active {
-	background-color: #428bca;
+	background-color: #d0bb50;
 }
 
 .portfolio-details .portfolio-info {
@@ -1116,7 +1116,7 @@ section {
 }
 
 .team .member .social a:hover {
-	color: #428bca;
+	color: #d0bb50;
 }
 
 .team .member .social i {
@@ -1237,7 +1237,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-	border-color: #428bca;
+	border-color: #d0bb50;
 }
 
 .contact .php-email-form input {
@@ -1250,16 +1250,16 @@ section {
 
 .contact .php-email-form button[type='submit'] {
 	background: #fff;
-	border: 2px solid #428bca;
+	border: 2px solid #d0bb50;
 	padding: 12px 35px;
 	transition: 0.4s;
-	background: #428bca;
+	background: #d0bb50;
 	color: #fff;
 	border-radius: 4px;
 }
 
 .contact .php-email-form button[type='submit']:hover {
-	background: #5697d0;
+	background: #e8d662;
 }
 
 @media (max-width: 1024px) {
@@ -1382,14 +1382,14 @@ section {
 	font-size: 16px;
 	padding: 0 20px 0 20px;
 	margin: 3px;
-	background: #428bca;
+	background: #d0bb50;
 	color: #fff;
 	transition: 0.3s;
 	border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-newsletter form input[type='submit']:hover {
-	background: #3071a9;
+	background: #55252f;
 }
 
 #footer .footer-top {
@@ -1435,7 +1435,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-	background: #428bca;
+	background: #d0bb50;
 	color: #fff;
 	text-decoration: none;
 }
@@ -1461,7 +1461,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
 	padding-right: 2px;
-	color: #5697d0;
+	color: #e8d662;
 	font-size: 18px;
 	line-height: 1;
 }
@@ -1484,7 +1484,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-	color: #5697d0;
+	color: #e8d662;
 }
 
 #footer .footer-top .footer-contact {
