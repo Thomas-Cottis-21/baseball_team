@@ -1,3 +1,6 @@
+Version 4.11.2
+    - Added media quieres to the roster + fine tuned media queries
+
 Version 4.11.0 
     - Replaced the rest of the colors with colors aligned with the logo
     - Updated the hr tags in the players and coaches roster. Thinner looks better.
