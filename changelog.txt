@@ -1,3 +1,7 @@
+Version 4.11.4
+    - Changed cta images
+    - Updated Get Started buttons in hero section to refer to #roster
+
 Version 4.11.3
     - Updated width property to roster-container to 100%, fixing not centering section bug. 
     - Updated color codes of section titles.

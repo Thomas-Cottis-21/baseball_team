@@ -783,7 +783,7 @@ section {
 --------------------------------------------------------------*/
 .cta {
 	background: linear-gradient(rgba(12, 13, 14, 0.8), rgba(12, 13, 14, 0.8)),
-		url('../img/cta-bg.jpg') fixed center center;
+		url('../img/pro_baseball_stadium_cta.jpg') fixed center center;
 	background-size: cover;
 	padding: 120px 0;
 }
