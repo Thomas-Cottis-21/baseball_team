@@ -1,3 +1,7 @@
+Version 4.11.6 
+    - Updated stats counter background color to match the section title background color
+    - Updated the services sections to now be the events section
+
 Version 4.11.4
     - Changed cta images
     - Updated Get Started buttons in hero section to refer to #roster

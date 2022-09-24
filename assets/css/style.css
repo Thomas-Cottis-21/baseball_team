@@ -558,7 +558,7 @@ section {
 	font-weight: 700;
 	padding: 8px 20px;
 	margin: 0;
-	background: #f5f9fc;
+	background: rgba(127, 137, 161, 0.25);
 	color: #55252f;
 	display: inline-block;
 	text-transform: uppercase;
@@ -588,7 +588,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Roster
 --------------------------------------------------------------*/
 #roster .roster-container {
     display: flex;
@@ -678,6 +678,7 @@ section {
 --------------------------------------------------------------*/
 .counts {
 	padding: 80px 0 60px 0;
+    background-color: rgba(127, 137, 161, 0.25);
 }
 
 .counts .counters span {
@@ -698,85 +699,25 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills {
-	padding-top: 0;
-}
-
-.skills .progress {
-	height: 60px;
-	display: block;
-	background: none;
-	border-radius: 0;
-}
-
-.skills .progress .skill {
-	padding: 10px 0;
-	margin: 0;
-	text-transform: uppercase;
-	display: block;
-	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
-	color: #394047;
-}
-
-.skills .progress .skill .val {
-	float: right;
-	font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-	background: #e3e6e9;
-}
-
-.skills .progress-bar {
-	width: 1px;
-	height: 10px;
-	transition: 0.9s;
-	background-color: #d0bb50;
-}
 
 /*--------------------------------------------------------------
-# Services
+# Events
 --------------------------------------------------------------*/
-.services {
-	padding-bottom: 30px;
+#events {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+#events .events-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
-.services .icon-box {
-	margin-bottom: 60px;
-}
-
-.services .icon {
-	float: left;
-}
-
-.services .icon i {
-	color: #d0bb50;
-	font-size: 36px;
-	line-height: 1;
-}
-
-.services .title {
-	margin-left: 60px;
-	font-weight: 700;
-	margin-bottom: 15px;
-	font-size: 18px;
-}
-
-.services .title a {
-	color: #343a40;
-	transition: 0.3s;
-}
-
-.services .icon-box:hover .title a {
-	color: #d0bb50;
-}
-
-.services .description {
-	margin-left: 60px;
-	line-height: 24px;
-	font-size: 14px;
-}
 
 /*--------------------------------------------------------------
 # Cta
