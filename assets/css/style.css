@@ -757,6 +757,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 85%;
+    padding: 20px 0 20px 0;
 }
 #events .data .event-title {
     color: white;

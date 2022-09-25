@@ -1,3 +1,7 @@
+Version 4.12.1 
+    - Updated events title to include time
+    - Updated events data - added 20px padding to top and bottom
+
 Version 4.12.0
     - Updated call to action to now be the events page. It worked out way better with how the background image is.
     - Updated the navbar to be accurate as of how the page is now. This includes the div id's that reference the nav-bar
