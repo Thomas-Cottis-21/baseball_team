@@ -1,3 +1,7 @@
+Version 4.12.0
+    - Updated call to action to now be the events page. It worked out way better with how the background image is.
+    - Updated the navbar to be accurate as of how the page is now. This includes the div id's that reference the nav-bar
+
 Version 4.11.6 
     - Updated stats counter background color to match the section title background color
     - Updated the services sections to now be the events section

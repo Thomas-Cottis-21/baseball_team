@@ -625,7 +625,7 @@ section {
 #roster .roster-container .coaches-section {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 95%;
     height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -697,67 +697,111 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# Events
---------------------------------------------------------------*/
-#events {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-#events .events-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-}
-
-
-/*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-.cta {
-	background: linear-gradient(rgba(12, 13, 14, 0.8), rgba(12, 13, 14, 0.8)),
-		url('../img/pro_baseball_stadium_cta.jpg') fixed center center;
+#events {
+	background: url('../img/pro_baseball_stadium_cta.jpg') fixed center center;
 	background-size: cover;
-	padding: 120px 0;
+	padding: 60px 0;
+}
+#events .events-general {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+/* Events title */
+#events .events-general .events-section-title {
+    text-align: center;
+}
+#events .events-general .events-section-title h2 {
+    color: white;
+}
+#events .events-general .events-section-title span {
+    color: #55252f;
+}
+/* End events title */
+
+/* Event list */
+#events .events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#events .event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 55%;
+    height: auto;
+    margin: 25px;
+    border-radius: 5px;
+    background-color: rgba(127, 137, 161, 0.2);
+    backdrop-filter: blur(10px);
 }
 
-.cta h3 {
-	color: #fff;
-	font-size: 28px;
-	font-weight: 700;
-	margin-bottom: 20px;
+#events .event .date {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+}
+#events .date .date-tile {
+    width: 3em;
+    height: 3em;
+    background-color: #55252f;
+    color: white;
+    border-radius: 5px;
 }
 
-.cta p {
-	color: #fff;
+#events .data {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+#events .data .event-title {
+    color: white;
+}
+#events .data .event-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+#events .data .event-location p.lead {
+    margin: 0 25px 0 0;
+}
+#events .data .event-description {
+    margin: 10px 0 0 0;
+    color: white;
 }
 
-.cta .cta-btn {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	letter-spacing: 1px;
-	display: inline-block;
-	padding: 12px 35px;
-	border-radius: 4px;
-	transition: 0.5s;
-	margin-top: 20px;
-	background: #d0bb50;
-	color: #fff;
+@media (max-width: 1100px) {
+    #events .event {
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+    #events .date {
+        justify-content: center;
+    }
+    #events .date .date-tile, 
+    #events .date {
+        width: 75%;
+    }
+    #events .data {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+    #events .data .event-location {
+        flex-direction: column;
+    }
+    #events .data .event-location p.lead {
+        margin: 0;
+    }
+    #events .data .event-description {
+        margin: 10px 0 10px 0;
+    }
 }
-
-.cta .cta-btn:hover {
-	background: #e8d662;
-}
-
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
