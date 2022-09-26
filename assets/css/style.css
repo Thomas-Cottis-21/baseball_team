@@ -745,9 +745,15 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
+#events::-webkit-scrollbar {
+    display: none;
+}
 #events {
-	background: url('../img/pro_baseball_stadium_cta.jpg') fixed center center;
-	background-size: cover;
+	background-image: url(/assets/img/pro_baseball_stadium_cta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: scroll;
 	padding: 60px 0;
 }
 #events .events-general {
