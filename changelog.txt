@@ -1,3 +1,7 @@
+Version 4.13.0
+    - Added feature to hide and show roster
+    - Added small icon animation + dynamic switch in javascript to change animations + rotate icon based on status of collapsible
+
 Version 4.12.1 
     - Updated events title to include time
     - Updated events data - added 20px padding to top and bottom

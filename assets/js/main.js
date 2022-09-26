@@ -266,3 +266,16 @@
 	 */
 	new PureCounter();
 })();
+
+    /* roster icon animation logic */
+    const icon = document.getElementById("roster-icon");
+    const roster = document.getElementById("roster-container");
+
+    icon.addEventListener("click", () => {
+        icon.classList.toggle("rotate-roster-icon");
+        if(icon.style.animationName =="roster-chevron-open") {
+            icon.style.animationName = "roster-chevron-closed";
+        } else {
+            icon.style.animationName = "roster-chevron-open";
+        }
+    })

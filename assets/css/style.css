@@ -590,6 +590,52 @@ section {
 /*--------------------------------------------------------------
 # Roster
 --------------------------------------------------------------*/
+@keyframes roster-chevron-open {
+    0% {
+        top: 25px;
+        opacity: 0;
+    }
+    50% {
+        top: 0px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+@keyframes roster-chevron-closed {
+    0% {
+        top: 0px;
+        opacity: 0;
+    }
+    50% {
+        top: 25px;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        opacity: 0;
+    }
+}
+.rotate-roster-icon {
+    transform: rotate(180deg);
+}
+#roster .expand-icon {
+    display: flex;
+    justify-content: center;
+}
+#roster .expand-icon span {
+    position: relative;
+    cursor: pointer;
+    font-size: 45px;
+    transition: ease-in-out;
+    transition-duration: .5s;
+    animation-name: roster-chevron-closed;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 #roster .roster-container {
     display: flex;
     flex-direction: column;
