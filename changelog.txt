@@ -1,3 +1,7 @@
+Version 4.13.4 
+    - Fixed bug in Apple safari. Background-attachment: fixed was zoomed in and the UX was extremely poor
+    - Updated chevron animation in roster + color
+
 Version 4.13.0
     - Added feature to hide and show roster
     - Added small icon animation + dynamic switch in javascript to change animations + rotate icon based on status of collapsible

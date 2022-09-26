@@ -592,29 +592,33 @@ section {
 --------------------------------------------------------------*/
 @keyframes roster-chevron-open {
     0% {
-        top: 25px;
-        opacity: 0;
+        top: 35px;
+        opacity: 0.1;
+    }
+    15% {
+        opacity: .6
     }
     50% {
-        top: 0px;
         opacity: 1;
     }
     100% {
-        top: 25px;
+        top: 0px;
         opacity: 0;
     }
 }
 @keyframes roster-chevron-closed {
     0% {
         top: 0px;
-        opacity: 0;
+        opacity: .1;
+    }
+    15% {
+        opacity: .6
     }
     50% {
-        top: 25px;
         opacity: 1;
     }
     100% {
-        top: 0px;
+        top: 35px;
         opacity: 0;
     }
 }
@@ -626,15 +630,16 @@ section {
     justify-content: center;
 }
 #roster .expand-icon span {
+    color: #55252f;
     position: relative;
     cursor: pointer;
     font-size: 45px;
     transition: ease-in-out;
     transition-duration: .5s;
     animation-name: roster-chevron-closed;
-    animation-duration: 3s;
+    animation-duration: 2.7s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease;
 }
 #roster .roster-container {
     display: flex;
@@ -760,7 +765,6 @@ section {
 #events .events-general {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
 }
 /* Events title */
 #events .events-general .events-section-title {
@@ -789,7 +793,7 @@ section {
     margin: 25px;
     border-radius: 5px;
     background-color: rgba(127, 137, 161, 0.2);
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(10px);
 }
 
 #events .event .date {
