@@ -752,6 +752,7 @@ section {
 	background-image: url(/assets/img/pro_baseball_stadium_cta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     overflow: scroll;
 	padding: 60px 0;
