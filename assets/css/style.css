@@ -788,7 +788,7 @@ section {
     margin: 25px;
     border-radius: 5px;
     background-color: rgba(127, 137, 161, 0.2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
 }
 
 #events .event .date {
