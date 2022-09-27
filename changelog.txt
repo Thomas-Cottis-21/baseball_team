@@ -1,3 +1,7 @@
+Version 4.15.0 
+    - Added inner-page.html template page as new documents page in the index nav-bar.
+    - Added links back to index in nav-bar on inner-page.html
+
 Version 4.14.0 
     - Added players of the week. Will be more exciting with more css that will come later
 
