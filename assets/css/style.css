@@ -593,6 +593,7 @@ section {
 #mvp {
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 #mvp .mvp-container {
     display: flex;
