@@ -1,3 +1,7 @@
+Version 4.13.5 {
+    - Updated roster animation in css to transition faster + cover more distance + be evenly spaced between roster and .section-title
+}
+
 Version 4.13.4 
     - Fixed bug in Apple safari. Background-attachment: fixed was zoomed in and the UX was extremely poor
     - Updated chevron animation in roster + color

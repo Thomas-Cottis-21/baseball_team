@@ -592,7 +592,7 @@ section {
 --------------------------------------------------------------*/
 @keyframes roster-chevron-open {
     0% {
-        top: 35px;
+        top: 45px;
         opacity: 0.1;
     }
     15% {
@@ -618,9 +618,12 @@ section {
         opacity: 1;
     }
     100% {
-        top: 35px;
+        top: 45px;
         opacity: 0;
     }
+}
+#roster .section-title {
+    padding: 0 0 25px 0;
 }
 .rotate-roster-icon {
     transform: rotate(180deg);
@@ -628,6 +631,7 @@ section {
 #roster .expand-icon {
     display: flex;
     justify-content: center;
+    margin: 0 0 25px 0;
 }
 #roster .expand-icon span {
     color: #55252f;
@@ -635,11 +639,10 @@ section {
     cursor: pointer;
     font-size: 45px;
     transition: ease-in-out;
-    transition-duration: .5s;
+    transition-duration: .1s;
     animation-name: roster-chevron-closed;
     animation-duration: 2.7s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
 }
 #roster .roster-container {
     display: flex;
