@@ -1,6 +1,8 @@
-Version 4.13.5 {
+Version 4.14.0 
+    - Added players of the week. Will be more exciting with more css that will come later
+
+Version 4.13.5 
     - Updated roster animation in css to transition faster + cover more distance + be evenly spaced between roster and .section-title
-}
 
 Version 4.13.4 
     - Fixed bug in Apple safari. Background-attachment: fixed was zoomed in and the UX was extremely poor
