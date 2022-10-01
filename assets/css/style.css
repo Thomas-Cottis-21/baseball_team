@@ -612,6 +612,9 @@ section {
     #mvp .mvp-container {
         flex-direction: column;
     }
+    #mvp .mvp-container > div {
+        width: 75%;
+    }
 }
 
 /*--------------------------------------------------------------
