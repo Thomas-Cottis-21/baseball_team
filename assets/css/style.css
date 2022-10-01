@@ -599,21 +599,27 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
 }
 #mvp .mvp-container > div {
     margin: 10px;
     height: auto;
-    width: 25%;
+    width: 65%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     #mvp .mvp-container {
         flex-direction: column;
     }
     #mvp .mvp-container > div {
-        width: 75%;
+        width: 95%;
+    }
+}
+@media (min-width: 1000px) {
+    #mvp .mvp-container > div {
+        width: 35%;
     }
 }
 
@@ -781,7 +787,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Cta
+# Events
 --------------------------------------------------------------*/
 #events::-webkit-scrollbar {
     display: none;
@@ -812,6 +818,17 @@ section {
 /* End events title */
 
 /* Event list */
+#events .events-section-title {
+    display: block;
+    margin: auto;
+}
+#events .events-section-title h2 {
+    width: fit-content;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
 #events .events-container {
     display: flex;
     flex-direction: column;

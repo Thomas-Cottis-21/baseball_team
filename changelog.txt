@@ -1,3 +1,11 @@
+Version 4.17.4
+    - Updated section titles to be all caps
+    - Updated navbar to accomodate Paiges updates
+    - Created fundraiser page which for now is inner-page copy 2
+    - Created team page with same roster animation collapsible named for now as inner-page copy
+    - Updated CSS backdrop filter to accomodate IOS Safari with webkit
+    - Created blur backdrop for events title
+
 Version 4.15.0 
     - Added inner-page.html template page as new documents page in the index nav-bar.
     - Added links back to index in nav-bar on inner-page.html
