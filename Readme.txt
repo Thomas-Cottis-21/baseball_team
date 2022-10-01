@@ -20,4 +20,13 @@ color palette:
         light logo gold middle = #d0bb50
     )
 
+Paige future plans for site: 
+    home -> team -> fundraising -> upcoming events -> parents (dropdown) -> contact
 
+    stats section - dynamic
+
+    four cards for fundraising - dynamic -> fundraising
+
+    current MVP section -> dynamic -> no mvp, section display: none;
+
+    

@@ -433,7 +433,7 @@ h6 {
 #hero h2 {
 	color: #fff;
 	margin-bottom: 20px;
-	font-size: 48px;
+	font-size: 68px;
 	font-weight: 700;
 }
 
@@ -605,6 +605,7 @@ section {
 #mvp .mvp-container > div {
     margin: 10px;
     height: auto;
+    width: 50%;
 }
 
 @media (max-width: 800px) {
