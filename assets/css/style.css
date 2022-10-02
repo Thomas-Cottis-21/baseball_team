@@ -598,7 +598,7 @@ section {
 #mvp .mvp-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-self: flex-start;
     margin: 0 0 25px 0;
     width: 100%;
 }
