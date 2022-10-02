@@ -603,6 +603,9 @@ section {
     height: auto;
 }
 #mvp .mvp-container > div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     margin: 10px;
     height: auto;
     width: 65%;
