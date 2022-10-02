@@ -604,6 +604,7 @@ section {
 }
 #mvp .mvp-container .card {
     width: 25%;
+    color: red;
 }
 @media (max-width: 550px) {
     #mvp .mvp-container .card {
