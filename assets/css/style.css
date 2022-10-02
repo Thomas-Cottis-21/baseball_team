@@ -609,6 +609,7 @@ section {
     margin: 10px;
     height: auto;
     width: 65%;
+    color: red;
 }
 
 @media (max-width: 700px) {
