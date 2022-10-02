@@ -607,14 +607,13 @@ section {
     flex-direction: column;
     align-items: flex-start;
     width: 25%;
-    color: orange;
 }
 #mvp .mvp-container .card img {
     width: 100%;
 }
 @media (max-width: 550px) {
     #mvp .mvp-container .card {
-        width: 85%;
+        width: 95%;
     }
 }
 
