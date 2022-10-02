@@ -598,13 +598,13 @@ section {
 #mvp .mvp-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 0 25px 0;
     width: 100%;
 }
 #mvp .mvp-container .card {
     width: 25%;
-    color: blue;
+    color: purple;
 }
 @media (max-width: 550px) {
     #mvp .mvp-container .card {
