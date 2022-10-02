@@ -598,22 +598,18 @@ section {
 #mvp .mvp-container {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin: 0 0 25px 0;
+    width: 100%;
 }
-
-/* @media (max-width: 700px) {
-    #mvp .mvp-container {
-        flex-direction: column;
-    }
-    #mvp .mvp-container > div {
-        width: 95%;
+#mvp .mvp-container .card {
+    width: 25%;
+}
+@media (max-width: 550px) {
+    #mvp .mvp-container .card {
+        width: 85%;
     }
 }
-@media (min-width: 1000px) {
-    #mvp .mvp-container > div {
-        width: 35%;
-    }
-} */
 
 /*--------------------------------------------------------------
 # Roster
