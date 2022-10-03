@@ -1,3 +1,8 @@
+Version 4.17.7
+    - Uploaded and inserted new team picture above sliders with separator
+    - Squashed IOS bug making mvp image strech
+    - Changed file names appropiately + updated navbar
+
 Version 4.17.4
     - Updated section titles to be all caps
     - Updated navbar to accomodate Paiges updates
