@@ -238,16 +238,24 @@
 
     /* events show and hide function */
 
-    const eventsOverflow = document.querySelectorAll(".event:nth-child(n+3)");
-    const events = document.querySelectorAll(".event");
     sessionStorage.setItem("events-status", "closed");
-
+    
     function eventsHandler() {
+
+        if(screen.width < 500) {
+            screenMeasure = 2;
+        } else {
+            screenMeasure = 3;
+        }
+
+        const eventsOverflow = document.querySelectorAll(".event:nth-child(n+"+ screenMeasure + ")");
+        const events = document.querySelectorAll(".event");
+
+
         if (events.length > 2 && sessionStorage.getItem("events-status") == "closed") {
             eventsOverflow.forEach( event=> {
                 event.style.display = "none";
             })
-    
             const moreEventsButton = document.createElement("button");
     
             moreEventsButton.className = "see-more-events";
@@ -261,17 +269,10 @@
                 moreEventsButton.remove();
                 eventsHandler();
             })
-    
-            /* bootstrap modal displaying all other events */
-            /* moreEventsButton.setAttribute("data-bs-toggle","modal");
-            moreEventsButton.setAttribute("data-bs-target","#events-modal"); */
-            
-        } else if (events.length < 2 || sessionStorage.getItem("events-status") == "open") {
+        } else if (events.length < screenMeasure || sessionStorage.getItem("events-status") == "open") {
             eventsOverflow.forEach( event=> {
                 event.style.display = "flex";
             })
         }
     }
     eventsHandler();
-
-    console.log(JSON.stringify(events));

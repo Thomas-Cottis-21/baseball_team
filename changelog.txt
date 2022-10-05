@@ -1,3 +1,6 @@
+Version 4.20.1
+    - Updated eventsHandler to accomodate screen size, so that cellphones only have the first event displaying, but a screen over 500 px wide will show first 2 events.
+
 Version 4.20.0
     - Updated events section to now have a see more events button + css
     - Moved roster collabsible javascript that ran the animation to the team page because it was causing errors in index by referencing index
