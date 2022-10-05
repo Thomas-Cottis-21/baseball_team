@@ -242,11 +242,12 @@
     
     function eventsHandler() {
 
-        if(screen.width < 500) {
+        if (screen.width < 500 && sessionStorage("events-status") == "closed") {
             screenMeasure = 2;
             document.getElementById("events").style.overflow = "hidden";
         } else {
             screenMeasure = 3;
+            document.getElementById("events").style.overflow = "scroll";
         }
 
         const eventsOverflow = document.querySelectorAll(".event:nth-child(n+"+ screenMeasure + ")");
