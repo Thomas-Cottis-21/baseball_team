@@ -207,37 +207,6 @@
 	}
 
 	/**
-	 * Porfolio isotope and filter
-	 */
-	window.addEventListener('load', () => {
-		let portfolioContainer = select('.portfolio-container');
-		if (portfolioContainer) {
-			let portfolioIsotope = new Isotope(portfolioContainer, {
-				itemSelector: '.portfolio-item',
-			});
-
-			let portfolioFilters = select('#portfolio-flters li', true);
-
-			on(
-				'click',
-				'#portfolio-flters li',
-				function (e) {
-					e.preventDefault();
-					portfolioFilters.forEach(function (el) {
-						el.classList.remove('filter-active');
-					});
-					this.classList.add('filter-active');
-
-					portfolioIsotope.arrange({
-						filter: this.getAttribute('data-filter'),
-					});
-				},
-				true,
-			);
-		}
-	});
-
-	/**
 	 * Initiate portfolio lightbox
 	 */
 	const portfolioLightbox = GLightbox({
@@ -267,15 +236,42 @@
 	new PureCounter();
 })();
 
-    /* roster icon animation logic */
-    const icon = document.getElementById("roster-icon");
-    const roster = document.getElementById("roster-container");
+    /* events show and hide function */
 
-    icon.addEventListener("click", () => {
-        icon.classList.toggle("rotate-roster-icon");
-        if(icon.style.animationName =="roster-chevron-open") {
-            icon.style.animationName = "roster-chevron-closed";
-        } else {
-            icon.style.animationName = "roster-chevron-open";
+    const eventsOverflow = document.querySelectorAll(".event:nth-child(n+3)");
+    const events = document.querySelectorAll(".event");
+    sessionStorage.setItem("events-status", "closed");
+
+    function eventsHandler() {
+        if (events.length > 2 && sessionStorage.getItem("events-status") == "closed") {
+            eventsOverflow.forEach( event=> {
+                event.style.display = "none";
+            })
+    
+            const moreEventsButton = document.createElement("button");
+    
+            moreEventsButton.className = "see-more-events";
+            moreEventsButton.style.margin = "50px 0px 0px 0px";
+            moreEventsButton.innerText = "See More Events";
+    
+            document.getElementById("events-container").appendChild(moreEventsButton);
+    
+            moreEventsButton.addEventListener("click", () => {
+                sessionStorage.setItem("events-status", "open");
+                moreEventsButton.remove();
+                eventsHandler();
+            })
+    
+            /* bootstrap modal displaying all other events */
+            /* moreEventsButton.setAttribute("data-bs-toggle","modal");
+            moreEventsButton.setAttribute("data-bs-target","#events-modal"); */
+            
+        } else if (events.length < 2 || sessionStorage.getItem("events-status") == "open") {
+            eventsOverflow.forEach( event=> {
+                event.style.display = "flex";
+            })
         }
-    })
+    }
+    eventsHandler();
+
+    console.log(JSON.stringify(events));

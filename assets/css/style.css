@@ -871,6 +871,17 @@ section {
     backdrop-filter: blur(10px);
 }
 
+.see-more-events {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #55252f;
+}
+
 #events .event .date {
     display: flex;
     text-align: center;
