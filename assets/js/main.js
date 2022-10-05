@@ -259,7 +259,7 @@
             const moreEventsButton = document.createElement("button");
     
             moreEventsButton.className = "see-more-events";
-            moreEventsButton.style.margin = "50px 0px 0px 0px";
+            moreEventsButton.style.margin = "25px 0px 0px 0px";
             moreEventsButton.innerText = "See More Events";
     
             document.getElementById("events-container").appendChild(moreEventsButton);
@@ -269,7 +269,7 @@
                 moreEventsButton.remove();
                 eventsHandler();
             })
-        } else if (events.length < screenMeasure || sessionStorage.getItem("events-status") == "open") {
+        } else if (events.length < 2 || sessionStorage.getItem("events-status") == "open") {
             eventsOverflow.forEach( event=> {
                 event.style.display = "flex";
             })
