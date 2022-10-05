@@ -261,7 +261,7 @@
             const moreEventsButton = document.createElement("button");
     
             moreEventsButton.className = "see-more-events";
-            moreEventsButton.style.margin = "10px 0px 0px 0px";
+            moreEventsButton.style.margin = "0px 0px 0px 0px";
             moreEventsButton.innerText = "See More Events";
     
             document.getElementById("events-container").appendChild(moreEventsButton);
