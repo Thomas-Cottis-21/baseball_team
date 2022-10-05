@@ -241,16 +241,15 @@
     sessionStorage.setItem("events-status", "closed");
     
     function eventsHandler() {
-
-        if (screen.width < 500 && sessionStorage.getItem("events-status") == "closed") {
+        
+        if (screen.width < 500) {
             screenMeasure = 2;
             document.getElementById("events").style.overflow = "hidden";
         } else {
             screenMeasure = 3;
-            document.getElementById("events").style.overflow = "scroll";
         }
 
-        const eventsOverflow = document.querySelectorAll(".event:nth-child(n+"+ screenMeasure + ")");
+        const eventsOverflow = document.querySelectorAll(".event:nth-child(n + "+ screenMeasure +")");
         const events = document.querySelectorAll(".event");
 
 
@@ -275,6 +274,7 @@
             eventsOverflow.forEach( event=> {
                 event.style.display = "flex";
             })
+            document.getElementById("events").style.overflow = "scroll";
         }
     }
     eventsHandler();
