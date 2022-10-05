@@ -242,7 +242,7 @@
     
     function eventsHandler() {
 
-        if (screen.width < 500 && sessionStorage("events-status") == "closed") {
+        if (screen.width < 500 && sessionStorage.getItem("events-status") == "closed") {
             screenMeasure = 2;
             document.getElementById("events").style.overflow = "hidden";
         } else {
