@@ -244,6 +244,7 @@
 
         if(screen.width < 500) {
             screenMeasure = 2;
+            document.getElementById("events").style.overflow = "hidden";
         } else {
             screenMeasure = 3;
         }
@@ -259,7 +260,7 @@
             const moreEventsButton = document.createElement("button");
     
             moreEventsButton.className = "see-more-events";
-            moreEventsButton.style.margin = "25px 0px 0px 0px";
+            moreEventsButton.style.margin = "15px 0px 0px 0px";
             moreEventsButton.innerText = "See More Events";
     
             document.getElementById("events-container").appendChild(moreEventsButton);
