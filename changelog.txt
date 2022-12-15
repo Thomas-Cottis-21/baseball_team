@@ -1,6 +1,7 @@
 Version 4.20.3
     - Updated eventsHandler to have a "see less events" button when the list of events are expanded. Needs further simplification and optimization + a smooth animation, but works for now. Mostly cosmetic.
     - Created an events background folder in assets to stay organized in the assets folder. Also changed the events background picture.
+    - Fixed small bug in events where user is unable to scroll when event-status is "open". 
 
 Version 4.20.1
     - Updated eventsHandler to accomodate screen size, so that cellphones only have the first event displaying, but a screen over 500 px wide will show first 2 events.

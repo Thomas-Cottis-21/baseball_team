@@ -244,7 +244,7 @@
         
         if (screen.width < 500) {
             screenMeasure = 2;
-            document.getElementById("events").style.overflow = "hidden";
+            /* document.getElementById("events").style.overflow = "hidden"; */
         } else {
             screenMeasure = 3;
         }
