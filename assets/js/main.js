@@ -253,23 +253,45 @@
         const events = document.querySelectorAll(".event");
 
 
-        if (events.length > 2 && sessionStorage.getItem("events-status") == "closed") {
-            eventsOverflow.forEach( event=> {
-                event.style.display = "none";
-            })
-            const moreEventsButton = document.createElement("button");
-    
-            moreEventsButton.className = "see-more-events";
-            moreEventsButton.style.margin = "0px 0px 0px 0px";
-            moreEventsButton.innerText = "See More Events";
-    
-            document.getElementById("events-container").appendChild(moreEventsButton);
-    
-            moreEventsButton.addEventListener("click", () => {
-                sessionStorage.setItem("events-status", "open");
-                moreEventsButton.remove();
-                eventsHandler();
-            })
+        if (events.length > 2) {
+
+            if (sessionStorage.getItem("events-status") == "closed") {
+                eventsOverflow.forEach( event=> {
+                    event.style.display = "none";
+                })
+                const moreEventsButton = document.createElement("button");
+        
+                moreEventsButton.className = "see-more-events";
+                moreEventsButton.style.margin = "0px 0px 0px 0px";
+                moreEventsButton.innerText = "See More Events";
+        
+                document.getElementById("events-container").appendChild(moreEventsButton);
+        
+                moreEventsButton.addEventListener("click", () => {
+                    sessionStorage.setItem("events-status", "open");
+                    moreEventsButton.remove();
+                    eventsHandler();
+                })
+            }
+
+            if (sessionStorage.getItem("events-status") == "open") {
+                eventsOverflow.forEach( event=> {
+                    event.style.display = "flex";
+                })
+                const lessEventsButton = document.createElement("button");
+
+                lessEventsButton.className = "see-more-events";
+                lessEventsButton.style.margin = "0px, 0px, 0px, 0px";
+                lessEventsButton.innerText = "See less events";
+
+                document.getElementById("events-container").appendChild(lessEventsButton);
+
+                lessEventsButton.addEventListener("click", () => {
+                    sessionStorage.setItem("events-status", "closed");
+                    lessEventsButton.remove();
+                    eventsHandler();
+                })
+            }
         } else if (events.length < 2 || sessionStorage.getItem("events-status") == "open") {
             eventsOverflow.forEach( event=> {
                 event.style.display = "flex";
