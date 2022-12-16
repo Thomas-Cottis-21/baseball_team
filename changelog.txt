@@ -1,3 +1,7 @@
+Version 4.21.2
+    -Fixed small bug in events modal. The back to top button was blocking a portion of the close button in the events modal. I added to the template Javascript starting on line 96
+    -Also fixed misalignment in events modal due to CSS unspecificity. 
+
 Version 4.21.0
     - Created modal to display the events that are overflowing, meaning that if there are more than 2 events, the see more events button is created, which opens up the modal showing the events. 
     - The overflow events classes change to be .events-overflow because they require different css (because they are in the modal).

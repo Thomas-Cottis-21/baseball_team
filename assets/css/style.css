@@ -833,8 +833,6 @@ section {
     background-size: cover;
     background-position: bottom;
     height: auto;
-    /* overflow: scroll; */
-	padding: 30px 0;
 }
 #events .events-general {
     display: flex;
@@ -937,7 +935,6 @@ section {
 }
 #events .events-overflow .events-separator {
     border: 1px solid #55252f;
-    /* border-width: 1px; */
     opacity: 1;
     width: 100%;
 }
@@ -961,10 +958,14 @@ section {
 }
 
 @media (max-width: 1100px) {
-    #events .event, #events .events-overflow {
+    #events .event {
         flex-direction: column;
         width: 95%;
         align-items: center;
+        justify-content: center;
+    }
+    #events .events-overflow .data .event-location .lead {
+        margin: 0px 0px 0px 0px;
     }
     #events .date {
         justify-content: center;
@@ -974,7 +975,6 @@ section {
         width: 75%;
     }
     #events .data, #events .events-overflow .data {
-        margin: 10px 0 0 0;
         text-align: center;
     }
     #events .event .data .event-location, #events .events-overflow .data .event-location {

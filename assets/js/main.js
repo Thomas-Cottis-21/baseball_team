@@ -94,9 +94,12 @@
 	 * Back to top button
 	 */
 	let backtotop = select('.back-to-top');
+    let eventsModal = document.getElementById("events-overflow");
 	if (backtotop) {
 		const toggleBacktotop = () => {
-			if (window.scrollY > 100) {
+            if (eventsModal.classList.contains("show")) {
+                backtotop.classList.remove('active');
+            } else if (window.scrollY > 100) {
 				backtotop.classList.add('active');
 			} else {
 				backtotop.classList.remove('active');
@@ -104,6 +107,7 @@
 		};
 		window.addEventListener('load', toggleBacktotop);
 		onscroll(document, toggleBacktotop);
+        onscroll(eventsModal, toggleBacktotop);
 	}
 
 	/**
@@ -260,6 +264,7 @@
 
         document.getElementById("events-container").appendChild(seeOverflow);
 
+        
     } else if (eventsOverflow.length === 0) {
         console.log("there are no overflow events");
     }
