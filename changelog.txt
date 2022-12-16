@@ -1,3 +1,7 @@
+Version 4.21.0
+    - Created modal to display the events that are overflowing, meaning that if there are more than 2 events, the see more events button is created, which opens up the modal showing the events. 
+    - The overflow events classes change to be .events-overflow because they require different css (because they are in the modal).
+
 Version 4.20.3
     - Updated eventsHandler to have a "see less events" button when the list of events are expanded. Needs further simplification and optimization + a smooth animation, but works for now. Mostly cosmetic.
     - Created an events background folder in assets to stay organized in the assets folder. Also changed the events background picture.

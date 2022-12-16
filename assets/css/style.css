@@ -16,6 +16,7 @@ html,body {
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #444444;
+    overflow: hidden;
 }
 
 a {
@@ -37,6 +38,16 @@ h6 {
 	font-family: 'Oswald', sans-serif;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -820,9 +831,9 @@ section {
 	background-image: url(/assets/img/mlb-night.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
-    overflow: scroll;
+    background-position: bottom;
+    height: auto;
+    /* overflow: scroll; */
 	padding: 30px 0;
 }
 #events .events-general {
@@ -871,7 +882,7 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.see-more-events {
+.see-overflow {
     width: auto;
     height: auto;
     padding: 10px;
@@ -888,7 +899,7 @@ section {
     align-items: center;
     font-size: 25px;
 }
-#events .date .date-tile {
+#events .event .date .date-tile {
     width: 3em;
     height: 3em;
     background-color: #55252f;
@@ -896,51 +907,83 @@ section {
     border-radius: 5px;
 }
 
-#events .data {
+#events .event .data {
     display: flex;
     flex-direction: column;
     width: 85%;
     padding: 20px 0 20px 0;
 }
-#events .data .event-title {
+#events .event .data .event-title {
     color: white;
 }
-#events .data .event-location {
+#events .event .data .event-location {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: white;
 }
-#events .data .event-location p.lead {
+#events .event .data .event-location p.lead {
     margin: 0 25px 0 0;
 }
-#events .data .event-description {
+#events .event .data .event-description {
     margin: 10px 0 0 0;
     color: white;
 }
 
+
+#events .events-overflow {
+    display: flex;
+    flex-direction: column;
+}
+#events .events-overflow .events-separator {
+    border: 1px solid #55252f;
+    /* border-width: 1px; */
+    opacity: 1;
+    width: 100%;
+}
+#events .events-overflow .date .date-tile {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+}
+#events .events-overflow .date .date-tile .month {
+    color: #55252f;
+    padding-right: 2px;
+}
+#events .events-overflow .data .event-location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#events .events-overflow .data .event-location .lead {
+    margin: 0px 30px 0px 0px;
+}
+
 @media (max-width: 1100px) {
-    #events .event {
+    #events .event, #events .events-overflow {
         flex-direction: column;
         width: 95%;
         align-items: center;
     }
     #events .date {
         justify-content: center;
+        width: 100%;
     }
-    #events .date .date-tile, 
-    #events .date {
+    #events .event .date .date-tile {
         width: 75%;
     }
-    #events .data {
+    #events .data, #events .events-overflow .data {
         margin: 10px 0 0 0;
         text-align: center;
     }
-    #events .data .event-location {
+    #events .event .data .event-location, #events .events-overflow .data .event-location {
         flex-direction: column;
-    }
-    #events .data .event-location p.lead {
+        align-content: center;
         margin: 0;
+    }
+    #events .event .data .event-location p.lead, #events .events-overflow .data .event-location p.lead {
+        margin: 0px 0px 0px 0px;
     }
     #events .data .event-description {
         margin: 10px 0 10px 0;
