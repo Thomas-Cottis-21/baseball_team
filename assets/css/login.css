@@ -3,8 +3,6 @@ html, body {
     overflow: hidden;
 }
 body {
-    width: 100vw;
-    height: 100vh;
     background-image: url(/assets/img/fundraising/loren-cutler-ReXultROeIE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
