@@ -93,22 +93,26 @@
 	/**
 	 * Back to top button
 	 */
-	let backtotop = select('.back-to-top');
-    let eventsModal = document.getElementById("events-overflow");
-	if (backtotop) {
-		const toggleBacktotop = () => {
-            if (eventsModal.classList.contains("show")) {
-                backtotop.classList.remove('active');
-            } else if (window.scrollY > 100) {
-				backtotop.classList.add('active');
-			} else {
-				backtotop.classList.remove('active');
-			}
-		};
-		window.addEventListener('load', toggleBacktotop);
-		onscroll(document, toggleBacktotop);
-        onscroll(eventsModal, toggleBacktotop);
-	}
+    if (window.location.pathname == "/index.html") {
+
+        let backtotop = select('.back-to-top');
+        let eventsModal = document.getElementById("events-overflow");
+        if (backtotop) {
+            const toggleBacktotop = () => {
+                if (eventsModal.classList.contains("show")) {
+                    backtotop.classList.remove('active');
+                } else if (window.scrollY > 100) {
+                    backtotop.classList.add('active');
+                } else {
+                    backtotop.classList.remove('active');
+                }
+            };
+            window.addEventListener('load', toggleBacktotop);
+            onscroll(document, toggleBacktotop);
+            onscroll(eventsModal, toggleBacktotop);
+        }
+
+    }
 
 	/**
 	 * Mobile nav toggle
@@ -240,27 +244,28 @@
 	new PureCounter();
 })();
 
-    /* Events overflow modal */
+/* Events overflow modal */
+if (window.location.pathname == "/index.html") {
 
     const eventContainer = document.getElementById("events-container");
-
+    
     /* All events taken from database */
     const events = document.querySelectorAll(".event");
-
+    
     /* All overflow events past the first 2 */
     const eventsOverflow = document.querySelectorAll(".event:nth-child(n + 3)");
-
+    
     /* Where all overflow events are displayed */
     const eventsModalBody = document.getElementById("events-modal-body");
     
     /* if the number of events is greater than 2 */
     if (events.length > 2) {
         eventsOverflow.forEach( element => {
-
+    
             /* put each overflow event in the modal */
             eventsModalBody.appendChild(element);
             element.className = "events-overflow";
-
+    
             /* create an hr to separate every event */
             let eventHr = document.createElement("hr");
             eventHr.className = "events-separator";
@@ -273,15 +278,34 @@
         seeOverflow.innerHTML = "<div><span>See more events</span> <img src='/assets/icons/right-arrow.png' class='icon-sm'/></div>";
         seeOverflow.setAttribute("data-bs-toggle", "modal");
         seeOverflow.setAttribute("data-bs-target", "#events-overflow");
-
+    
         eventContainer.appendChild(seeOverflow);
-
+    
         
     } else if (events.length === 0) {
         console.log("there are no overflow events");
         let noEventsMessage = document.createElement("h2");
         noEventsMessage.classList.add("no-events-message")
         noEventsMessage.innerText = "There are currently no events.";
-
+    
         eventContainer.appendChild(noEventsMessage);
     }
+
+}
+
+if (window.location.pathname == "/fundraising.html") {
+
+    const donate = document.getElementById("button-donate");
+    const imgElement = document.getElementById("donate-img");
+
+        donate.addEventListener("mouseenter", () => {
+            console.log("im entering");
+            imgElement.src = "/assets/icons/right-arrow-maroon.png";
+        })
+    
+        donate.addEventListener("mouseleave", () => {
+            console.log("im leaving");
+            imgElement.src = "/assets/icons/right-arrow.png";
+        })
+
+}

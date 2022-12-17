@@ -1,3 +1,7 @@
+Version 4.21.6
+    - Added Oxygen font from Google fonts. Thinking about putting it as all p tags in the future.
+    - Started the fundraising page. Finishing up the design of how the fundraiser is going to look generally.
+
 Version 4.21.4 
     - Added Bootstrap cards to fundraising section to see if Paige wants to keep it or change it.
 

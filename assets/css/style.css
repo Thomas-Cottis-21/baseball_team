@@ -14,7 +14,7 @@ html,body {
     overflow-x: hidden;
 }
 body {
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
 	color: #444444;
     overflow: hidden;
 }
@@ -1007,6 +1007,10 @@ section {
 /*--------------------------------------------------------------
 # Fundraising
 --------------------------------------------------------------*/
+
+/* fundraising main page */
+
+
 #fundraising .fundraising-container {
     display: flex;
     flex-direction: column;
@@ -1032,6 +1036,44 @@ section {
     }
 }
 
+/* Fundraising inner html */
+
+#fundraising-page .indiv-fundraiser-container {
+    display: flex;
+    flex-direction: column;
+}
+#fundraising-page .indiv-fundraiser-container .header {
+    margin: 0px 0px 25px 0px;
+}
+#fundraising-page .indiv-fundraiser-container .header .subtitle {
+    font-style: italic;
+}
+#fundraising-page .indiv-fundraiser-container .img img {
+    width: 100%;
+}
+#fundraising-page .indiv-fundraiser-container .content p {
+    font-family: "Oxygen", sans-serif;
+}
+#fundraising-page .indiv-fundraiser-container .donate button {
+    padding: 5px 10px 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #55252f;
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    font-size: 25px;
+    transition: ease-in-out;
+    transition-duration: .2s;
+}
+#fundraising-page .indiv-fundraiser-container .donate button:hover {
+    border: 2px solid #55252f;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #55252f;
+}
+#fundraising-page .indiv-fundraiser-container .donate span img {
+    width: 20px;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
