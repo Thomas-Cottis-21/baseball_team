@@ -1,0 +1,94 @@
+/* General */
+html, body {
+    overflow: hidden;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/img/fundraising/loren-cutler-ReXultROeIE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Login form */
+
+#login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#login .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+#login .login-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+}
+#login .login-container form:nth-child(-n+2) {
+    width: 35%;
+}
+#login .login-container input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+    font-size: 15px;
+    font-family: "Oxygen", sans-serif;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+#login .login-container input:focus {
+    outline: none;
+}
+#login .login-container form .submit {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#login .login-container form .submit button {
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-bottom: 2px solid white;
+    transition: ease-in-out;
+    transition-duration: .2s;
+}
+#login .login-container form .submit button:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+@media (max-width: 1100px) {
+    #login .login-container {
+        width: 65vw;
+        height: 65vh;
+    }
+    #login .login-container form:nth-child(-n+2) {
+        width: 45%;
+    }
+}
+@media (max-width: 400px) {
+    #login .login-container {
+        width: 85vw;
+        height: 55vh;
+    }
+    #login .login-container form:nth-child(-n+2) {
+        width: 85%;
+    }
+}
