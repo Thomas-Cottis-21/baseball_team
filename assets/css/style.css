@@ -965,6 +965,7 @@ section {
 #events .no-events-message {
     padding: 15px;
     color: white;
+    text-align: center;
     border-radius: 5px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -1006,10 +1007,29 @@ section {
 /*--------------------------------------------------------------
 # Fundraising
 --------------------------------------------------------------*/
-#fundraising-section .fundraising-container {
+#fundraising .fundraising-container {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+#fundraising .fundraisers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#fundraising .fundraisers .card {
+    width: 45vw;
+}
+
+@media (max-width: 1024px) {
+    #fundraising .fundraisers {
+        flex-direction: column;
+    }
+    #fundraising .fundraisers .card {
+        margin: 10px 0px 10px 0px;
+        width: 95vw;
+    }
 }
 
 /*--------------------------------------------------------------
