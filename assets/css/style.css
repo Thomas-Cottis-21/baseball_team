@@ -48,6 +48,11 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.icon-sm {
+    width: 25px;
+
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -955,6 +960,14 @@ section {
 }
 #events .events-overflow .data .event-location .lead {
     margin: 0px 30px 0px 0px;
+}
+
+#events .no-events-message {
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 @media (max-width: 1100px) {
