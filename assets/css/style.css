@@ -1041,6 +1041,7 @@ section {
 #fundraising-page .indiv-fundraiser-container {
     display: flex;
     flex-direction: column;
+    margin: 0px 0px 30px 0px;
 }
 #fundraising-page .indiv-fundraiser-container .header {
     margin: 0px 0px 25px 0px;
@@ -1056,23 +1057,24 @@ section {
 }
 #fundraising-page .indiv-fundraiser-container .donate button {
     padding: 5px 10px 5px 10px;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    background-color: #55252f;
-    color: white;
-    font-family: "Oxygen", sans-serif;
-    font-size: 25px;
-    transition: ease-in-out;
-    transition-duration: .2s;
-}
-#fundraising-page .indiv-fundraiser-container .donate button:hover {
     border: 2px solid #55252f;
     border-radius: 10px;
     background-color: transparent;
     color: #55252f;
+    font-family: "Oxygen", sans-serif;
+    font-size: 25px;
+    transition: ease-in-out;
+    transition-duration: .4s;
+}
+#fundraising-page .indiv-fundraiser-container .donate button:hover {
+    border-radius: 0px;
 }
 #fundraising-page .indiv-fundraiser-container .donate span img {
     width: 20px;
+}
+#fundraising-page .indiv-fundraiser-container hr {
+    border: 1px solid #55252f;
+    opacity: 1;
 }
 /*--------------------------------------------------------------
 # Contact

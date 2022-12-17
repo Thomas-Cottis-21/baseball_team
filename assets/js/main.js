@@ -294,18 +294,13 @@ if (window.location.pathname == "/index.html") {
 }
 
 if (window.location.pathname == "/fundraising.html") {
+    const fundraiser = document.querySelectorAll(".indiv-fundraiser-container");
 
-    const donate = document.getElementById("button-donate");
-    const imgElement = document.getElementById("donate-img");
-
-        donate.addEventListener("mouseenter", () => {
-            console.log("im entering");
-            imgElement.src = "/assets/icons/right-arrow-maroon.png";
-        })
-    
-        donate.addEventListener("mouseleave", () => {
-            console.log("im leaving");
-            imgElement.src = "/assets/icons/right-arrow.png";
-        })
-
+    if (fundraiser.length >= 2) {
+        for (i = 0; i < fundraiser.length; i++) {
+            fundHr = document.createElement("hr");
+            fundraiser[i].appendChild(fundHr);
+        }
+    }
 }
+
