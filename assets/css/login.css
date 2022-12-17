@@ -6,7 +6,11 @@ body {
     background-image: url(/assets/img/fundraising/loren-cutler-ReXultROeIE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+    margin: 0px;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* Login form */
