@@ -347,7 +347,7 @@
 						<h2>UPCOMING <span>EVENTS</span></h2>
 					</div>
 					<div class="events-container" id="events-container">
-						<!-- <div class="event">
+						<div class="event">
 							<div class="date">
 								<div class="date-tile">
 									<div class="month">Sep</div>
@@ -532,7 +532,7 @@
 									amet ullamcorper.
 								</div>
 							</div>
-						</div> -->
+						</div>
 						
 					</div>
 
